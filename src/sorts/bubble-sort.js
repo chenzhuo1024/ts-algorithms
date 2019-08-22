@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * 冒泡排序是一个原地排序算法，只需要常量级存储空间，空间复杂度为O(1)
  * 相等元素不交换，稳定的排序算法
@@ -29,24 +29,4 @@ function bubbleSort(datas) {
         }
     }
 }
-exports.bubbleSort = bubbleSort;
-function insertSort(datas) {
-    if (!datas || datas.length <= 1)
-        return;
-    var aLens = datas.length;
-    for (var i = 1; i < aLens; i++) {
-        var curElem = datas[i]; // 当前要比较的元素
-        var j = i - 1;
-        for (; j >= 0; j--) {
-            if (curElem < datas[j]) {
-                // 向后移动
-                datas[j + 1] = datas[j];
-            }
-            else {
-                break;
-            }
-        }
-        datas[j + 1] = curElem;
-    }
-}
-exports.insertSort = insertSort;
+exports.default = bubbleSort;
