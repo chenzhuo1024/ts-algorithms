@@ -1,11 +1,14 @@
 import  bubbleSort from "./sorts/bubble-sort";
 import insertSort from './sorts/insertion-sort';
 import  selectionSort  from "./sorts/selection-sort";
+import mergeSort from "./sorts/merge-sort"
 const testCase=[4,5,6,1,2,3];
 
 
 //bubbleSort(testCase);
 //insertSort(testCase);
-selectionSort(testCase)
+//selectionSort(testCase)
+
+mergeSort(testCase);
 console.log(testCase); 
 
